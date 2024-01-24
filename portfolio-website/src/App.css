@@ -1,0 +1,15 @@
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body {
+    height: 5400px;
+    background-image: url('./images/BG.png');
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    width: 0px;
+}

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Caros Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/cretype_Caros_Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Caros Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/cretype_Caros_Bold.woff") format("woff");
+}
+
+.profile {
+    background-color: #8184D2;
+    height: 880px;
+    width: 550px;
+    border-radius: 17px;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    color: white;
+    padding: 2rem;
+}
+
+.Dp {
+    margin-left: 6rem;
+}
+
+.line-1 {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Caros Thin';
+    margin-top: 2rem;
+}
+
+.line-2 {
+    font-size: 53px;
+    font-weight: 300;
+    font-family: 'Caros Bold';
+    margin-top: 2rem;
+}
+
+.line-3 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.line-4 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 4rem;
+}
+
+.footer-1 img {
+    margin-right: 0.7rem;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -3rem;
+    margin-right: 3rem;
+}
+
+.footer-2 img {
+    margin-right: 1rem;
+}
