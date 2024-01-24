@@ -1,0 +1,150 @@
+.ref {
+    position: absolute;
+    opacity: 0.7;
+    z-index: 999;
+}
+
+.nav-wrapper {
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    margin: 0 auto;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-content li {
+    margin: 0 1.5rem;
+}
+
+.nav-content .logo {
+    margin-right: 4.5rem;
+}
+
+.nav-content .linkedIn {
+    margin-right: -3rem;
+}
+
+.nav-content .github {
+    margin-right: 3rem;
+}
+
+.nav-content .download {
+    margin-left: 1rem;
+}
+
+.nav-content .download-btn {
+    display: flex;
+    margin-right: 2rem;
+    background-color: #FFC266;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 225px;
+    border-radius: 25rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #080027;
+    position: relative;
+    cursor: pointer;
+}
+
+.download-cv {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #080027;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: #8184D2;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-item.active::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #080027;
+    background: #FFC266;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn img {
+    width: 2rem;
+}
+
+.menu-btn:hover {
+    color: #ffffff;
+    background: #080027;
+    border: 1px solid #FFC266;
+}
+
+@media (max-width: 1250px) {
+    .logo {
+        margin-left: 4rem;
+    }
+
+    .menu-btn {
+        display: flex;
+        margin-right: 4rem;
+    }
+
+    .nav-content ul {
+        display: none;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .logo {
+        width: 4rem;
+    }
+}
