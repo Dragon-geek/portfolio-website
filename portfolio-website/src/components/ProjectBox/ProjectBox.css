@@ -1,0 +1,61 @@
+.Project-box .overlap-group {
+    background-color: #ffc266;
+    border-radius: 17px;
+    height: 320px;
+    position: relative;
+    width: 822px;
+}
+
+.Project-box .Project-Image {
+    height: 320px;
+    left: 253px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 569px;
+    border-radius: 17px;
+}
+
+.Project-box .Project-text {
+    color: #070027;
+    font-size: 26px;
+    font-weight: 400;
+    left: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 27px;
+}
+
+.Project-box .div {
+    color: #070027;
+    font-size: 26px;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 121px;
+}
+
+.Project-box .Project-text-2 {
+    color: #070027;
+    font-size: 26px;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 166px;
+}
+
+.Project-box .Project-text-3 {
+    color: #070027;
+    font-size: 26px;
+    font-weight: 400;
+    left: 127px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 275px;
+}
