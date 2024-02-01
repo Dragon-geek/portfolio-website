@@ -1,13 +1,15 @@
 import React from "react";
 import "./Hero.css";
-import ProfileF from "../../images/ProfileF.png";
-import ProfileBG from "../../images/ProfileBG.png";
-import Location from "../../images/Location.svg";
-import GradCap from "../../images/GradCap.svg";
+import Ux from "../../images/UX.svg";
+import PC from "../../images/Mobile PC.svg";
+import Coding from "../../images/Coding.svg";
 import Project_1 from "../../images/Project1.png";
 import Project_2 from "../../images/Fit4All.png";
 import Project_3 from "../../images/Finder.png";
+
+import Profile from "../Profile/Profile";
 import ProjectBoxCarousel from "../ProjectBoxCarousel/ProjectBoxCarousel";
+import SkillBoxCarousel from "../SkillBoxCarousel/SkillBoxCarousel";
 
 const Hero = () => {
     const projects = [
@@ -16,24 +18,15 @@ const Hero = () => {
         { imageSrc: Project_3, projectNum: "Project 3", projectName: "Travel App", client: "CSESoc", date: "May 2023" }
     ];
 
+    const skills = [
+        { iconSrc: Ux, name1: "UI/UX", name2: "design" },
+        { iconSrc: PC, name1: "Web", name2: "development" },
+        { iconSrc: Coding, name1: "Software", name2: "development" }
+    ];
+
     return (
         <>
-            <div className="profile">
-                <img className="Dp" src={ProfileBG} alt="" />
-                <img className="DpFace" src={ProfileF} alt="" />
-                <div className="line-1">Hey there,</div>
-                <div className="line-2">I'm Rahul Soni</div>
-                <div className="line-3">Software Engineer</div>
-                <div className="line-4">Product Designer</div>
-                <div className="footer-1">
-                    <img src={Location} alt="Location icon" />
-                    Based in Sydney
-                </div>
-                <div className="footer-2">
-                    <img src={GradCap} alt="Grad Cap icon" />
-                    UNSW
-                </div>
-            </div>
+            <Profile />
             <div className="label-head">
                 <div className="label-shape" />
             </div>
@@ -42,6 +35,9 @@ const Hero = () => {
             </div>
             <div className="Project-box">
                 <ProjectBoxCarousel projects={projects} />
+            </div>
+            <div className="Skill-box">
+                <SkillBoxCarousel skills={skills} />
             </div>
         </>
     );

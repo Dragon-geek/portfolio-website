@@ -1,0 +1,33 @@
+.Skill-box .overlap-group {
+    background-color: #080027;
+    border-radius: 17px;
+    height: 320px;
+    width: 299px;
+    color: white;
+    font-size: 26px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Skill-box .Header {
+    position: absolute;
+    left: 23px;
+    top: 17px;
+}
+
+.Skill-box .Skill-Icon {
+    margin-top: 40px;
+    height: 80px;
+    width: 80px;
+}
+
+.Skill-box .Skill-Name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
