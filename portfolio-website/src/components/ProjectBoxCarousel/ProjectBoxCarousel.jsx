@@ -1,37 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ProjectBox from "../ProjectBox/ProjectBox";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
+
 import "./ProjectBoxCarousel.css";
 
 const ProjectBoxCarousel = ({ projects }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
-        }, 4000);
-
-        return () => {
-            clearInterval(timer);
-        };
-    }, [projects.length]);
-
     return (
-        <div className="Projects">
+        <Swiper
+            slidesPerView={1}
+            navigation
+            autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+            }}
+            pagination={{ dynamicBullets: true }}
+            modules={[Autoplay, Pagination]}
+        >
             {projects.map((project, index) => (
-                <div
-                    key={index}
-                    className={`project-box ${index === currentIndex ? "visible" : "hidden"}`}
-                >
-                    <ProjectBox
-                        imageSrc={project.imageSrc}
-                        projectNum={project.projectNum}
-                        projectName={project.projectName}
-                        client={project.client}
-                        date={project.date}
-                    />
-                </div>
+                <SwiperSlide key={index}>
+                    <div className="box">
+                        <ProjectBox
+                            imageSrc={project.imageSrc}
+                            projectNum={project.projectNum}
+                            projectName={project.projectName}
+                            client={project.client}
+                            date={project.date}
+                        />
+                    </div>
+                </SwiperSlide>
             ))}
-        </div>
+        </Swiper>
     );
 };
 

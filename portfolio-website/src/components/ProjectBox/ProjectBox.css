@@ -1,61 +1,51 @@
-.Project-box .overlap-group {
+.Project-box {
     background-color: #ffc266;
     border-radius: 17px;
     height: 320px;
-    position: relative;
-    width: 822px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.Project-box .Project-Image {
-    height: 320px;
-    left: 253px;
+.Project-text-container {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.Project-img {
+    flex: 4;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+.Project-Image {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 569px;
-    border-radius: 17px;
+    border-radius: 0 17px 17px 0;
 }
 
-.Project-box .Project-text {
-    color: #070027;
-    font-size: 26px;
-    font-weight: 400;
-    left: 70px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 27px;
+.Project-Num {
+    flex: 1;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-.Project-box .div {
-    color: #070027;
-    font-size: 26px;
-    font-weight: 400;
-    left: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 121px;
+.Project-details {
+    flex: 1;
 }
 
-.Project-box .Project-text-2 {
-    color: #070027;
-    font-size: 26px;
-    font-weight: 400;
-    left: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 166px;
-}
-
-.Project-box .Project-text-3 {
-    color: #070027;
-    font-size: 26px;
-    font-weight: 400;
-    left: 127px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 275px;
+.Project-Date {
+    flex: 0;
+    margin-bottom: 10px;
+    margin-left: 130px;
 }

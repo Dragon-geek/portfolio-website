@@ -1,38 +1,82 @@
-.label {
-    height: 193px;
-    width: 1164px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 5rem 0rem 5rem;
 }
 
-.label .text-wrapper {
-    position: absolute;
+.grid-container {
+    max-width: 1920px;
+    max-height: 1080px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Profile Portfolio Portfolio"
+        "Profile Portfolio Portfolio"
+        "Profile Portfolio Portfolio";
+}
+
+.Profile {
+    border: 1px solid red;
+    grid-area: Profile;
+}
+
+.Portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.2fr 1.2fr;
+    gap: 0px 3rem;
+    grid-template-areas:
+        "Heading Heading Heading"
+        "Projects Projects Skills"
+        "Bottom Bottom Bottom";
+    grid-area: Portfolio;
+}
+
+.Heading {
+    border: 1px solid red;
+    grid-area: Heading;
+}
+
+.Projects {
+    border: 1px solid red;
+    grid-area: Projects;
+}
+
+.Skills {
+    border: 1px solid red;
+    grid-area: Skills;
+}
+
+.Bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Exp Act";
+    grid-area: Bottom;
+}
+
+.Exp {
+    border: 1px solid red;
+    grid-area: Exp;
+}
+
+.Activity {
+    border: 1px solid red;
+    grid-area: Act;
+}
+
+.Heading .text-wrapper {
     color: #070027;
     font-family: "Caros-Bold", Helvetica;
-    font-size: 168px;
+    font-size: 11rem;
     font-weight: 700;
-    height: 193px;
-    right: 4rem;
-    letter-spacing: 55.44px;
+    letter-spacing: 55px;
     line-height: normal;
     text-align: center;
-    top: 9rem;
-    white-space: nowrap;
-    width: 1164px;
-}
-
-.label-head {
-    height: 58px;
-    width: 58px;
-}
-
-.label-head .label-shape {
-    border-color: #070027;
-    border-right-style: solid;
-    border-right-width: 15px;
-    border-top-style: solid;
-    border-top-width: 15px;
-    height: 58px;
-    right: 4rem;
-    position: absolute;
-    top: 10rem;
-    width: 58px;
 }

@@ -7,6 +7,9 @@ import Project_1 from "../../images/Project1.png";
 import Project_2 from "../../images/Fit4All.png";
 import Project_3 from "../../images/Finder.png";
 
+import ProjectBox from "../ProjectBox/ProjectBox";
+import SkillBox from "../SkillBox/SkillBox";
+
 import Profile from "../Profile/Profile";
 import ProjectBoxCarousel from "../ProjectBoxCarousel/ProjectBoxCarousel";
 import SkillBoxCarousel from "../SkillBoxCarousel/SkillBoxCarousel";
@@ -26,18 +29,41 @@ const Hero = () => {
 
     return (
         <>
-            <Profile />
-            <div className="label-head">
-                <div className="label-shape" />
-            </div>
-            <div className="label">
-                <div className="text-wrapper">Portfolio</div>
-            </div>
-            <div className="Project-box">
-                <ProjectBoxCarousel projects={projects} />
-            </div>
-            <div className="Skill-box">
-                <SkillBoxCarousel skills={skills} />
+            <div className="container">
+                <div className="grid-container">
+                    <div className="Profile">
+                        <Profile />
+                    </div>
+
+                    <div className="Portfolio">
+                        <div className="Heading">
+                            <div className="text-wrapper">Portfolio</div>
+                        </div>
+
+                        <div className="Projects">
+                            <ProjectBoxCarousel projects={projects} />
+                        </div>
+
+                        <div className="Skills">
+                            {/* <SkillBoxCarousel skills={skills} /> */}
+                            <SkillBox 
+                                iconSrc={Ux}
+                                name1="UX/UI"
+                                name2="design"
+                            />
+                        </div>
+
+                        <div className="Bottom">
+                            <div className="Exp">
+                                EXP
+                            </div>
+
+                            <div className="Activity">
+                                ACT
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );

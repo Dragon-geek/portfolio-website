@@ -13,12 +13,11 @@
 }
 
 .profile {
+    position: relative;
     background-color: #8184D2;
     height: 880px;
     width: 550px;
     border-radius: 17px;
-    margin-top: 4rem;
-    margin-left: 5rem;
     color: white;
     padding: 2rem;
 }
@@ -45,8 +44,8 @@
 
 .DpFace {
     position: absolute;
-    top: 12rem;
-    left: 13rem;
+    top: 2rem;
+    right: 1rem;
     transition: transform 0.3s ease-in-out;
 }
 

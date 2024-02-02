@@ -3,7 +3,7 @@ import "./SkillBox.css";
 
 const SkillBox = ({ iconSrc, name1, name2 }) => {
     return (
-        <div className="overlap-group">
+        <div className="Skill-box">
             <div className="Header">Skills</div>
             <img className="Skill-Icon" alt="Skill-Icon" src={iconSrc} />
             <div className="Skill-Name">
