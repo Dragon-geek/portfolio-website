@@ -1,0 +1,36 @@
+.Exp-box {
+    background-color: #080027;
+    border-radius: 17px;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Exp-Header {
+    color: #fff;
+    width: 100%;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.Exp-Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Experience {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+}

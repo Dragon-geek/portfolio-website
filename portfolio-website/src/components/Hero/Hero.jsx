@@ -9,6 +9,8 @@ import Project_3 from "../../images/Finder.png";
 
 import ProjectBox from "../ProjectBox/ProjectBox";
 import SkillBox from "../SkillBox/SkillBox";
+import ExpBox from "../ExpBox/ExpBox";
+import ActBox from "../ActBox/ActBox";
 
 import Profile from "../Profile/Profile";
 import ProjectBoxCarousel from "../ProjectBoxCarousel/ProjectBoxCarousel";
@@ -30,6 +32,10 @@ const Hero = () => {
     return (
         <>
             <div className="container">
+                <div className="small-Profile">
+                    <Profile />
+                </div>
+
                 <div className="grid-container">
                     <div className="Profile">
                         <Profile />
@@ -55,11 +61,11 @@ const Hero = () => {
 
                         <div className="Bottom">
                             <div className="Exp">
-                                EXP
+                                <ExpBox />
                             </div>
 
                             <div className="Activity">
-                                ACT
+                                <ActBox />
                             </div>
                         </div>
                     </div>

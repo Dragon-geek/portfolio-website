@@ -12,6 +12,7 @@ const ProjectBoxCarousel = ({ projects }) => {
     return (
         <Swiper
             slidesPerView={1}
+            spaceBetween={30}
             navigation
             autoplay={{
                 delay: 4000,

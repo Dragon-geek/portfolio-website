@@ -5,6 +5,10 @@
     padding: 4rem 5rem 0rem 5rem;
 }
 
+.small-Profile {
+    display: none;
+}
+
 .grid-container {
     max-width: 1920px;
     max-height: 1080px;
@@ -13,6 +17,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: row;
+    gap: 20px 20px;
     grid-template-areas:
         "Profile Portfolio Portfolio"
         "Profile Portfolio Portfolio"
@@ -20,7 +25,7 @@
 }
 
 .Profile {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Profile;
 }
 
@@ -28,7 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.6fr 1.2fr 1.2fr;
-    gap: 0px 3rem;
+    gap: 20px 3rem;
     grid-template-areas:
         "Heading Heading Heading"
         "Projects Projects Skills"
@@ -37,17 +42,17 @@
 }
 
 .Heading {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Heading;
 }
 
 .Projects {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Projects;
 }
 
 .Skills {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Skills;
 }
 
@@ -55,19 +60,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 0px 3rem;
     grid-template-areas:
         "Exp Act";
     grid-area: Bottom;
 }
 
 .Exp {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Exp;
 }
 
 .Activity {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: Act;
 }
 
@@ -79,4 +84,21 @@
     letter-spacing: 55px;
     line-height: normal;
     text-align: center;
+}
+
+@media (max-width: 1450px) {
+    .Heading .text-wrapper {
+        letter-spacing: 20px;
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .grid-container {
+        display: none;
+    }
+
+    .small-Profile {
+        display: block;
+    }
 }

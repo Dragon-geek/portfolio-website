@@ -12,8 +12,9 @@
 
 .Header {
     flex: 0;
-    margin-right: 250px;
+    margin-right: 230px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .Skill-Icon {
