@@ -1,0 +1,25 @@
+.Contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 5rem 0rem 5rem;   
+}
+
+.Contact {
+    max-width: 1920px;
+    height: 984px;
+}
+
+.Contact-Sep {
+    display: flex;
+}
+
+.Contact-Sep img {
+    object-fit: contain;
+}
+
+.Footer {
+    display: flex;
+    justify-content: end;
+}

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 5rem 0rem 5rem;
+    padding: 3rem 5rem 16px 5rem;
 }
 
 .small-Profile {
@@ -11,7 +11,7 @@
 
 .grid-container {
     max-width: 1920px;
-    max-height: 1080px;
+    height: 916px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,7 +32,7 @@
 .Portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 1.2fr 1.2fr;
+    grid-template-rows: 1.6fr 2.2fr 0.2fr;
     gap: 20px 3rem;
     grid-template-areas:
         "Heading Heading Heading"
