@@ -59,20 +59,30 @@
 
 .Work-Info {
     background-color: #080027;
-    width: 40vw;
+    width: 80vw;
     height: 45vh;
     border-radius: 17px;
     color: white;
-    padding: 2rem;
+    padding: 3rem;
     font-size: larger;
 }
 
-.Work-Testi {
+.Work ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.Work ul li::after {
+    content: " ";
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #8184D2;
-    width: 35vw;
-    height: 45vh;
-    border-radius: 17px;
-    color: white;
-    padding: 2rem;
-    font-size: larger;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.35rem;
 }

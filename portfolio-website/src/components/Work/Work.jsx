@@ -9,25 +9,43 @@ import CseSoc from "../../images/CseSoc.png";
 import Emp from "../../images/Emp.png";
 
 const clientData = {
-    funfox: {
-        info: "Funfox Info Lorem Ipsum",
-        testi: "Funfox Testimonial Lorem Ipsum",
-    },
     datacom: {
-        info: "Datacom Info Lorem Ipsum",
-        testi: "Datacom Testimonial Lorem Ipsum",
+        info: [
+            "As a Project Team Member at Datacom, you played a pivotal role in improving staff-resident interactions in aged-care facilities",
+            "Collaborated in a cross-functional team to devise strategies enhanced staff-resident interactions in aged-care facilities, leading to a 15% increase in resident satisfaction",
+            "Spearheaded creation and presentation of an innovative solution to address project's challenge, was recognized as most impactful, improving operational efficiency by 25%",
+        ],
+    },
+    funfox: {
+        info: [
+            "Developed and implemented Python scripts to streamline and automate logistics processes, resulting in a 20% improvement in efficiency",
+            "Led design and implementation of a new website front-end, utilizing HTML, CSS, and JavaScript, enhanced user experience and increased site traffic by 30%",
+            "Supervisor's remark - \"Fantastic job on developing the UI/UX design! Your creativity and attention to user experience truly shine through.\""
+        ],
     },
     indsoc: {
-        info: "IndSoc Info Lorem Ipsum",
-        testi: "IndSoc Testimonial Lorem Ipsum",
+        info: [
+            "Contributed to the Media and Marketing team at UNSW Indian Society (Indsoc), creating numerous posters and reels, garnering appreciation from peers and leaders.",
+            "Held an AHEGS recognized position, highlighting proficiency and dedication in media and marketing tasks.",
+            "Received commendation from Marketing Director for exemplary dedication, leadership, and collaborative skills, showcasing the ability to work seamlessly with others.",
+            "Acknowledged for exceptional skills and team spirit, with the potential to contribute significantly to any organization."
+    ],
     },
     csesoc: {
-        info: "CseSoc Info Lorem Ipsum",
-        testi: "CseSoc Testimonial Lorem Ipsum",
+        info: [
+            "Engaged in a hackathon organized by the Computer Science and Engineering (CSE) Society at UNSW.",
+            "Collaborated within a team to develop an app design, utilizing exceptional prototyping skills to address the provided problem statement.",
+            "Demonstrated proficiency in problem-solving and innovation to meet the challenges presented during the hackathon.",
+            "Gained valuable experience and insights from the hackathon, which proved beneficial for future endeavors."
+        ],
     },
     emp: {
-        info: "Emp Info Lorem Ipsum",
-        testi: "Emp Testimonial Lorem Ipsum",
+        info: [
+            "Engaged in the Innovator Pro program organized by the UNSW Employability Team, focusing on enhancing entrepreneurial skills.",
+            "Acquired knowledge and skills on delivering powerful pitches and presenting ideas effectively to potential investors through workshops and practical sessions.",
+            "Contributed to the development of an innovative solution to address a specific problem, demonstrating creativity and problem-solving abilities.",
+            "Engaged in workshops delivered by industry partners, fostering an understanding of leadership, teamwork, and the interdisciplinary nature of modern workplaces."
+        ],
     },
 };
 
@@ -58,8 +76,11 @@ const Work = () => {
                             <div className="Client-logo" onClick={() => handleClientClick("csesoc")}><img src={CseSoc} alt="logo" /></div>
                             <div className="Client-logo" onClick={() => handleClientClick("emp")}><img src={Emp} alt="logo" /></div>
                         </div>
-                        <div className="Work-Info">{selectedClient && clientData[selectedClient].info}</div>
-                        <div className="Work-Testi">{selectedClient && clientData[selectedClient].testi}</div>
+                        <ul className="Work-Info">
+                            {selectedClient && clientData[selectedClient].info.map((item) => (
+                                <li key={item}>{item}</li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>
