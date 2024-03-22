@@ -65,6 +65,7 @@
     color: white;
     padding: 3rem;
     font-size: larger;
+    overflow: scroll;
 }
 
 .Work ul li {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import './Navbar.css';
 import Logo from '../../images/logo.svg';
 import Download from '../../images/Download.svg';
@@ -6,10 +6,11 @@ import LinkedIn from '../../images/LinkedIn.svg';
 import GitHub from '../../images/GitHub.svg';
 import Menu from '../../images/Menu.svg';
 import Close from '../../images/Close.svg';
+import { Link } from "react-scroll";
+
+import Resume from '../../assets/Resume.pdf';
 
 import MobileNav from "./MobileNav/MobileNav";
-
-import ref from '../../images/ref.png';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = React.useState(false);
@@ -18,40 +19,52 @@ const Navbar = () => {
         setOpenMenu(!openMenu);
     };
 
+    const linkRef = useRef(null);
+
+    const handleDownloadClick = () => {
+        linkRef.current.click();
+    };
+
     return (
         <>
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
-            {/* <img className="ref" src={ref} alt="" /> */}
             <nav className="nav-wrapper">
                 <div className="nav-content">
                     <ul>
                         <li>
-                            <a href="#" className="menu-item">Home</a>
+                            <Link activeClass="active" to="hero" smooth spy offset={-100} className="menu-item">Home</Link>
                         </li>
                         <li>
-                            <a href="#" className="menu-item">Projects</a>
+                            <Link activeClass="active" to="overview" smooth spy offset={-80} className="menu-item">Overview</Link>
                         </li>
                         <li>
-                            <a href="#" className="menu-item">Contact</a>
+                            <Link activeClass="active" to="work" smooth spy offset={-80} className="menu-item">Work</Link>
                         </li>
                         <li>
-                            <a href="#" className="menu-item">About me</a>
+                            <Link activeClass="active" to="projects" smooth spy offset={-80} className="menu-item">Projects</Link>
+                        </li>
+                        <li>
+                            <Link activeClass="active" to="contact" smooth spy className="menu-item">Contact</Link>
                         </li>
                     </ul>
 
                     <img className="logo" src={Logo} alt="logo" />
 
                     <ul>
-                        <li className="download-btn">
-                            <a href="#" className="download-cv">Download CV</a>
+                        <li onClick={handleDownloadClick} className="download-btn">
+                            <a href={Resume} download="Resume-Rahul.pdf" ref={linkRef} className="download-cv">Download CV</a>
                             <img className="download" src={Download} alt="download" />
                         </li>
                         <li>
-                            <img className="linkedIn menu-item" src={LinkedIn} alt="LinkedIn" />
+                            <a href="https://www.linkedin.com/in/rahulsoni0700" target="_blank" rel="noopener noreferrer">
+                                <img className="linkedIn menu-item" src={LinkedIn} alt="LinkedIn" />
+                            </a>
                         </li>
                         <li>
-                            <img className="github menu-item" src={GitHub} alt="GitHub" />
+                            <a href="https://github.com/Dragon-geek" target="_blank" rel="noopener noreferrer">
+                                <img className="github menu-item" src={GitHub} alt="GitHub" />
+                            </a>
                         </li>
                     </ul>
 

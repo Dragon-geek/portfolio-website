@@ -12,9 +12,10 @@ const SkillBoxCarousel = ({ skills }) => {
     return (
         <Swiper
             slidesPerView={1}
+            spaceBetween={30}
             navigation
             autoplay={{
-                delay: 4000,
+                delay: 2000,
                 disableOnInteraction: false,
             }}
             pagination={{ dynamicBullets: true }}

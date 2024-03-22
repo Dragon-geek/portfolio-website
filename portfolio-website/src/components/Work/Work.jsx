@@ -57,7 +57,7 @@ const Work = () => {
     };
 
     return (
-        <>
+        <section id="work">
             <div className="Work-container">
                 <div className="Work">
                     <div className="Work-Header">Work Experience <span className="Work-Header-2">& Activities</span></div>
@@ -84,7 +84,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

@@ -54,6 +54,7 @@
 .Skills {
     /* border: 1px solid red; */
     grid-area: Skills;
+    overflow: hidden;
 }
 
 .Bottom {

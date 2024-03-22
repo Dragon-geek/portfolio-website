@@ -9,8 +9,10 @@ import GradCap from "../../images/GradCap.svg";
 const Profile = () => {
     return (
         <div className="profile">
-            <img className="Dp" src={ProfileBG} alt="" />
-            <img className="DpFace" src={ProfileF} alt="" />
+            <div className="dp-container">
+                <img className="Dp" src={ProfileBG} alt="" />
+                <img className="DpFace" src={ProfileF} alt="" />
+            </div>
             <div className="line-1">Hey there,</div>
             <div className="line-2">I'm Rahul Soni</div>
             <div className="line-3">Software Engineer</div>

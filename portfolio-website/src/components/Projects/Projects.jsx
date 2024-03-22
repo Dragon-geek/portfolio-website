@@ -50,7 +50,7 @@ const PROJECTS = [
     },
     {
         title: "Course Recommendations System",
-        lang: ["Python", "Flask", "API"],
+        lang: ["Python", "Research", "Web-Design"],
         details: [
             "A research project delving deep into different algorithms used by popular companies.",
             "Investigated collaborative filtering and content-based filtering approaches.",
@@ -91,7 +91,7 @@ const Projects = () => {
     };
 
     return (
-        <>
+        <section id="projects">
             <div className="Project-container">
                 <div className="Project-list">
                     <div className="Project-Header">Projects</div>
@@ -113,7 +113,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

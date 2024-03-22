@@ -3,12 +3,13 @@ import "./Hero.css";
 import Ux from "../../images/UX.svg";
 import PC from "../../images/Mobile PC.svg";
 import Coding from "../../images/Coding.svg";
+import react from "../../images/React.svg"
 import Project_1 from "../../images/Project1.png";
 import Project_2 from "../../images/Fit4All.png";
 import Project_3 from "../../images/Finder.png";
+import Project_4 from "../../images/dungeon_mania.png";
+import Project_5 from "../../images/slackr.png";
 
-import ProjectBox from "../ProjectBox/ProjectBox";
-import SkillBox from "../SkillBox/SkillBox";
 import ExpBox from "../ExpBox/ExpBox";
 import ActBox from "../ActBox/ActBox";
 
@@ -20,17 +21,20 @@ const Hero = () => {
     const projects = [
         { imageSrc: Project_1, projectNum: "Project 1", projectName: "Memory Mates", client: "Datacom", date: "Oct 2023" },
         { imageSrc: Project_2, projectNum: "Project 2", projectName: "Fit 4 All", client: "Mobile App", date: "Aug 2023" },
-        { imageSrc: Project_3, projectNum: "Project 3", projectName: "Travel App", client: "CSESoc", date: "May 2023" }
+        { imageSrc: Project_3, projectNum: "Project 3", projectName: "Travel App", client: "CSESoc", date: "May 2023" },
+        { imageSrc: Project_4, projectNum: "Project 4", projectName: "Dungeonmania", client: "Java", date: "Oct 2022" },
+        { imageSrc: Project_5, projectNum: "Project 5", projectName: "Slack Clone", client: "JavaScript", date: "Nov 2023" },
     ];
 
     const skills = [
         { iconSrc: Ux, name1: "UI/UX", name2: "design" },
         { iconSrc: PC, name1: "Web", name2: "development" },
-        { iconSrc: Coding, name1: "Software", name2: "development" }
+        { iconSrc: Coding, name1: "Software", name2: "development" },
+        { iconSrc: react, name1: "React", name2: "developer" }
     ];
 
     return (
-        <>
+        <section id="hero">
             <div className="container">
                 <div className="small-Profile">
                     <Profile />
@@ -51,12 +55,7 @@ const Hero = () => {
                         </div>
 
                         <div className="Skills">
-                            {/* <SkillBoxCarousel skills={skills} /> */}
-                            <SkillBox 
-                                iconSrc={Ux}
-                                name1="UX/UI"
-                                name2="design"
-                            />
+                            <SkillBoxCarousel skills={skills} />
                         </div>
 
                         <div className="Bottom">
@@ -71,7 +70,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

@@ -55,6 +55,7 @@
     height: 50px;
     width: 225px;
     border-radius: 25rem;
+    cursor: pointer;
 }
 
 .menu-item {

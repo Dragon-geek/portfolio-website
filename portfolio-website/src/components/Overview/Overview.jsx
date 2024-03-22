@@ -10,7 +10,7 @@ import SkillBox from "../SkillBox/SkillBox";
 
 const Overview = () => {
     return (
-        <>
+        <section id="overview">
             <div className="Overview-container">
                 <div className="Overview">
                     <div className="Overview-Header">Overview</div>
@@ -39,7 +39,7 @@ const Overview = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

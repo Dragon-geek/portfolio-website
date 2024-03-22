@@ -6,7 +6,7 @@ import ContactBox from "../ContactBox/ContactBox";
 
 const Contact = () => {
     return (
-        <>
+        <section id="contact">
             <div className="Contact-container">
                 <div className="Contact">
                     <div className="Contact-Sep">
@@ -19,7 +19,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
