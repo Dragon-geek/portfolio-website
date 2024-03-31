@@ -113,7 +113,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     .Work-container {
         margin-top: 20px;
     }
@@ -148,5 +148,19 @@
     .Work-Info {
         width: 350px;
         height: auto;
+    }
+}
+
+@media (max-width: 325px) {
+    .Work-Header {
+        font-size: 40px;
+    }
+
+    .Client-logo {
+        width: 145px;
+    }
+
+    .Work-Info {
+        width: 310px;
     }
 }

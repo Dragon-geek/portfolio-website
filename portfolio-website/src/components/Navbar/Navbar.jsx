@@ -49,7 +49,7 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <img className="logo" src={Logo} alt="logo" />
+                    <Link activeClass="active" to="hero" smooth spy offset={-100} ><img className="logo" src={Logo} alt="logo" /></Link>
 
                     <ul>
                         <li onClick={handleDownloadClick} className="download-btn">
