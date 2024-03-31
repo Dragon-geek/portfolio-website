@@ -64,10 +64,25 @@
     }
 
     .project-card h6 {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
 
     .project-card ul li {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-card {
+        margin: 0;
+        height: auto;
+    }
+
+    .project-card h6 {
+        font-size: 1.4rem;
+    }
+
+    .project-card ul li {
+        font-size: 0.9rem;
     }
 }

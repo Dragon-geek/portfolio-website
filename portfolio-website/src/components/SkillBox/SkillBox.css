@@ -42,3 +42,15 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 400px) {
+    .Skill-box {
+        font-size: 25px;
+        width: 330px;
+    }
+
+    .Header {
+        margin-right: 230px;
+        margin-left: 20px;
+    }
+}

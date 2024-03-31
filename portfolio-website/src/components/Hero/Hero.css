@@ -103,3 +103,13 @@
         padding: 3rem 0rem 0rem 0rem;
     }
 }
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0;
+    }
+
+    .small-Profile {
+        width: 400px;
+    }
+}

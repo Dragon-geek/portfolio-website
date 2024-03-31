@@ -63,3 +63,36 @@
     font-size: 24px;
     margin-bottom: 2rem;
 }
+
+@media (max-width: 1400px) {
+    .ContactBox-container {
+        width: 650px;
+    }
+}
+
+@media (max-width: 400px) {
+    .ContactBox-container {
+        width: 390px;
+        border-radius: 0;
+    }
+
+    .Contact-Header-1 {
+        font-size: 30px;
+    }
+
+    .Contact-Header-2 {
+        font-size: 70px;
+    }
+
+    .Contact-Input {
+        font-size: 15px;
+    }
+
+    .Contact-Input input {
+        font-size: 15px;
+    }
+
+    .Message {
+        font-size: 15px;
+    }
+}

@@ -74,21 +74,43 @@
 }
 
 @media (max-width: 768px) {
-    .experience-container {
-        margin: 4rem 0;
-    }
-
-    .experience-container h5 {
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-    }
 
     .arrow-left,
     .arrow-right {
-        display: none;
+        width: 18.5rem;
+        height: 5rem;
+        margin: 0;
+        top: 102%;
     }
 
     .Project-list {
         width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .Project-container {
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .Project-list {
+        max-width: 400px;
+    }
+
+    .Project-Header {
+        font-size: 75px;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        width: 10rem;
+        height: 4rem;
+        top: 100%;
+    }
+
+    .Project-text {
+        margin-bottom: 30px;
     }
 }

@@ -112,3 +112,41 @@
         font-size: medium;
     }
 }
+
+@media (max-width: 400px) {
+    .Work-container {
+        margin-top: 20px;
+    }
+
+    .Work-Header {
+        font-size: 65px;
+    }
+
+    .Work-Header-2 {
+        display: none;
+    }
+
+    .Work-List {
+        flex-direction: column;
+    }
+
+    .Points {
+        display: none;
+    }
+
+    .Work-Client {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .Client-logo {
+        width: 165px;
+
+    }
+
+    .Work-Info {
+        width: 350px;
+        height: auto;
+    }
+}

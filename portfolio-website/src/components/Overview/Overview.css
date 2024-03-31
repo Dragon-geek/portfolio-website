@@ -44,3 +44,17 @@
         padding: 4rem 2rem 0rem 2rem;
     }
 }
+
+@media (max-width: 400px) {
+    .Overview-container {
+        margin-top: 20px;
+    }
+
+    .Overview-Header {
+        font-size: 75px;
+    }
+
+    .Overview-text {
+        font-size: 16px;
+    }
+}
