@@ -81,7 +81,7 @@
     text-align: center;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
     .Heading .text-wrapper {
         letter-spacing: 20px;
         font-size: 8rem;

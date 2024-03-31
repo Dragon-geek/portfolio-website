@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
     .Skill-box {
         font-size: 20px;
         width: 200px;

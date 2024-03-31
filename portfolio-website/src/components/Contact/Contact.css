@@ -25,7 +25,11 @@
     margin-top: 20px;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
+    .Contact {
+        max-width: 1500px;
+    }
+    
     .Contact-Sep img {
         width: auto;
         height: 700px;

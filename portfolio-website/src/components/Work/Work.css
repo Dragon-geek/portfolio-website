@@ -88,7 +88,7 @@
     top: 0.35rem;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
     .Work-Header-2 {
         color: white;
     }
