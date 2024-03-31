@@ -25,7 +25,6 @@
 }
 
 .Profile {
-    /* border: 1px solid red; */
     grid-area: Profile;
 }
 
@@ -42,17 +41,14 @@
 }
 
 .Heading {
-    /* border: 1px solid red; */
     grid-area: Heading;
 }
 
 .Projects {
-    /* border: 1px solid red; */
     grid-area: Projects;
 }
 
 .Skills {
-    /* border: 1px solid red; */
     grid-area: Skills;
     overflow: hidden;
 }
@@ -68,12 +64,10 @@
 }
 
 .Exp {
-    /* border: 1px solid red; */
     grid-area: Exp;
 }
 
 .Activity {
-    /* border: 1px solid red; */
     grid-area: Act;
 }
 
@@ -101,5 +95,11 @@
 
     .small-Profile {
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 3rem 0rem 0rem 0rem;
     }
 }

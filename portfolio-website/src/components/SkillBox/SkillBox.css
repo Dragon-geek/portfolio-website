@@ -30,3 +30,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1450px) {
+    .Skill-box {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .Header {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

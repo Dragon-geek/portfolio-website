@@ -34,3 +34,14 @@
     padding: 10px 20px;
     margin: 10px;
 }
+
+@media (max-width: 1450px) {
+    .Exp-Logo img {
+        width: auto;
+        height: 25px;
+    }
+
+    .Experience {
+        margin: 15px;
+    }
+}

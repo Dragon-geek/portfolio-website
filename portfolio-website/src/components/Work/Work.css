@@ -5,11 +5,11 @@
     flex-direction: column;
     margin-top: 100px;
     padding: 4rem 5rem 0rem 5rem;
+    margin-bottom: 90px;
 }
 
 .Work {
     max-width: 1920px;
-    height: 916px;
 }
 
 .Work-Header {
@@ -86,4 +86,29 @@
     position: absolute;
     left: -1.3rem;
     top: 0.35rem;
+}
+
+@media (max-width: 1450px) {
+    .Work-Header-2 {
+        color: white;
+    }
+
+    .Work-Info {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .Work-Header, 
+    .Work-Header-2 {
+        font-size: 80px;
+    }
+
+    .Work-container {
+        padding: 4rem 2rem 0rem 2rem;
+    }
+
+    .Work ul li {
+        font-size: medium;
+    }
 }

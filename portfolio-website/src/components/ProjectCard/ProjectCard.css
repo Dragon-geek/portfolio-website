@@ -48,6 +48,16 @@
     top: 0.35rem;
 }
 
+@media (max-width: 1024px) {
+    .project-card h6 {
+        font-size: 1.4rem;
+    }
+
+    .project-card ul li {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .project-card {
         margin: 0;

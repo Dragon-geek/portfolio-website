@@ -8,11 +8,11 @@
 
 .Contact {
     max-width: 1920px;
-    height: 984px;
 }
 
 .Contact-Sep {
     display: flex;
+    align-items: center;
 }
 
 .Contact-Sep img {
@@ -22,4 +22,18 @@
 .Footer {
     display: flex;
     justify-content: end;
+    margin-top: 20px;
+}
+
+@media (max-width: 1450px) {
+    .Contact-Sep img {
+        width: auto;
+        height: 700px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .Contact-Sep img {
+        display: none;
+    }
 }

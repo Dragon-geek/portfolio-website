@@ -9,7 +9,6 @@
 
 .Overview {
     max-width: 1920px;
-    height: 916px;
 }
 
 .Overview-Header {
@@ -28,4 +27,20 @@
     display: flex;
     gap: 4vw;
     margin-bottom: 100px;
+}
+
+@media (max-width: 1450px) {
+    .Overview-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Skill-container {
+        flex-wrap: wrap;
+    }
+
+    .Overview-container {
+        padding: 4rem 2rem 0rem 2rem;
+    }
 }
